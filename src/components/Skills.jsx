@@ -109,7 +109,7 @@ const Skills = () => {
             </p>
           </motion.div>
 
-          {/* Small Scrolling Images Section */}
+          {/* Scrolling Images Section */}
           <div className="mb-10">
             <div className="overflow-hidden rounded-3xl">
               <motion.div
