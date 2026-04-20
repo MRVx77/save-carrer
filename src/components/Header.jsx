@@ -6,7 +6,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <h1 className="text-2xl font-bold text-white">
-          Career<span className="text-blue-500">AI</span>
+          Saving.<span className="text-blue-500">Carrer</span>
         </h1>
 
         {/* Navigation */}
