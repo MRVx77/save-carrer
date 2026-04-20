@@ -74,7 +74,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="relative bg-black text-white py-20 px-6 overflow-hidden"
+      className="relative  text-white py-20 px-6 overflow-hidden"
     >
       {/* Background Effects */}
       <div className="absolute top-0 left-0 w-125 h-125 bg-blue-500/15 blur-[180px] rounded-full"></div>

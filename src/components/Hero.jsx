@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, Bot } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen overflow-hidden bg-black text-white flex items-center justify-center px-6 pt-20"
+      className="relative min-h-screen overflow-hidden text-white flex items-center justify-center px-6 pt-20"
     >
       {/* Background Glow Effects */}
       <motion.div
@@ -27,7 +27,6 @@ const Hero = () => {
           initial={{ opacity: 0, x: -80 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9 }}
-          viewport={{ once: false }}
         >
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-500/30 bg-white/5 mb-6">
@@ -99,28 +98,29 @@ const Hero = () => {
           initial={{ opacity: 0, x: 80 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9 }}
-          viewport={{ once: false }}
           className="flex justify-center"
         >
           <motion.div
             animate={{ y: [0, -14, 0] }}
             transition={{ duration: 4, repeat: Infinity }}
-            className="relative w-85 h-85"
+            className="relative w-105 h-105"
           >
-            {/* Glow Ring */}
-            <div className="absolute inset-0 rounded-full bg-linear-to-r from-blue-500 to-purple-600 blur-2xl opacity-40"></div>
+            {/* Glow */}
+            <div className="absolute inset-0 rounded-4xl bg-linear-to-r from-blue-500 to-purple-600 blur-3xl opacity-30"></div>
 
-            {/* Main Card */}
-            <div className="relative z-10 w-full h-full rounded-4xl border border-white/10 bg-white/5 backdrop-blur-xl flex flex-col items-center justify-center shadow-2xl">
-              <Bot size={70} className="text-blue-400 mb-5" />
+            {/* Image Card */}
+            <div className="relative z-10 w-full h-full rounded-4xl overflow-hidden border border-white/10 shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80"
+                alt="AI Technology"
+                className="w-full h-full object-cover"
+              />
 
-              <h2 className="text-5xl font-bold text-center leading-tight">
-                AI
-                <br />
-                Future
-              </h2>
-
-              <p className="text-gray-400 text-sm mt-4">Adapt • Learn • Win</p>
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/35 flex flex-col justify-end p-8">
+                <h2 className="text-4xl font-bold">AI Future</h2>
+                <p className="text-gray-200 mt-2">Adapt • Learn • Grow • Win</p>
+              </div>
             </div>
           </motion.div>
         </motion.div>

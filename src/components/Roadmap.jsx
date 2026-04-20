@@ -52,7 +52,7 @@ const Roadmap = () => {
   return (
     <section
       id="roadmap"
-      className="relative bg-black text-white py-28 px-6 overflow-hidden"
+      className="relative text-white py-28 px-6 overflow-hidden"
     >
       <style>{gradientStyle}</style>
       {/* Background Effects */}

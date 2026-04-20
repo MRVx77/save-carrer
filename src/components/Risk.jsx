@@ -44,7 +44,7 @@ const Risk = () => {
   return (
     <section
       id="risk"
-      className="relative bg-black text-white py-28 px-6 overflow-hidden"
+      className="relative  text-white py-28 px-6 overflow-hidden"
     >
       {/* Animated Background */}
       <div className="absolute top-10 left-10 w-72 h-72 bg-red-500/20 blur-[140px] rounded-full animate-pulse"></div>
